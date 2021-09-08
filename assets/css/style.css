@@ -11,10 +11,14 @@ body {
     background: #ffffff;
 }
 
-/* Change from Run Buddy header */
 header {
     padding: 20px 35px;
     background-color: #03045E;
+    display: flex;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 9999;
 }
 
 header h1 {
@@ -45,6 +49,12 @@ header nav ul li a {
     font-size: 22px;
 }
 
+.primary-border {
+    border-bottom: 2px solid;
+    border-color: #00b4d8;
+    padding-bottom: 10px;
+}
+
 /* Hero Style Start */
 .hero {
     background-image: url("../images/hero.jpg");
@@ -59,9 +69,8 @@ header nav ul li a {
     padding: 20px;
     width: 300px;
     color: #ffffff;
-    position: absolute;
-    bottom: 420px;
-    right: 70px;
+    position: sticky;
+    float: right;
   }
 
   .hero-note p {
@@ -97,3 +106,31 @@ footer a {
 section {
     padding: 60px;
 }
+
+.heading {
+    float:left;
+    border-right: solid;
+    border-color: #03045E;
+    padding: 10px;
+}
+
+.left-column {
+    flex: 1 30%;
+    margin: 30px auto;
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:flex-start;
+}
+
+/*responsive elements*/
+@media screen and (max-width: 980px) {
+    header {
+      justify-content: center;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
