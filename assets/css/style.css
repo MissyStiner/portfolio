@@ -14,7 +14,7 @@ body {
 header {
     padding: 20px 35px;
     background-color: #03045E;
-    display: flex;
+    display: flex-end;
     flex-wrap: wrap;
     position: -webkit-sticky;
     position: sticky;
@@ -89,13 +89,15 @@ footer h3 {
     display: inline;
     color: #ffffff;
     font-size: 30px;
-    margin: 0;
+    margin-right: 30px;
+    float:left;
+    border-right: solid;
+    padding: 10px;
 }
 
 footer div {
-    float: right;
     line-height: 1.5;
-    text-align: right;
+    display: inline-flex;
 }
 
 footer a {
@@ -115,12 +117,29 @@ section {
 }
 
 .left-column {
-    flex: 1 30%;
-    margin: 30px auto;
-    padding-bottom: 20px;
+    flex: 1 45%;
+    margin-right: 50px;
+
+}
+
+.profile {
     display: flex;
-    flex-wrap: wrap;
-    align-items:flex-start;
+    justify-content: space-around;
+
+}
+
+.profile img {
+    max-width: 250px;
+}
+
+.work {
+    display: flex;
+    justify-content: space-around;
+}
+
+.work img {
+    max-width: 800px;
+    align-content: center;
 }
 
 /*responsive elements*/
