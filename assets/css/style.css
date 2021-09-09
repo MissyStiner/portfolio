@@ -96,13 +96,17 @@ footer h3 {
 }
 
 footer div {
-    line-height: 1.5;
+    align-content: center;
     display: inline-flex;
 }
 
 footer a {
     color: #ffffff;
     font-style: normal;
+    padding-inline: 10px;
+    text-decoration: none;
+    line-height: 1.5;
+    font-weight: bolder;
 }
 
 section {
@@ -114,11 +118,12 @@ section {
     border-right: solid;
     border-color: #03045E;
     padding: 10px;
+    line-height: 100px;
 }
 
 .left-column {
     flex: 1 45%;
-    margin-right: 50px;
+    margin-left: 50px;
 
 }
 
@@ -140,6 +145,7 @@ section {
 .work img {
     max-width: 800px;
     align-content: center;
+    border: 5px solid #00b4d8;
 }
 
 /*responsive elements*/
